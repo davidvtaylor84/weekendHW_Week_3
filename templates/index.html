@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Main</title>
+</head>
+<body>
+    <h1>Our Books</h1>
+    <div>
+        {% for book in booklist %}
+        <h3>TITLE: {{ book.book_title }} | AUTHOR: {{ book.author }} | GENRE: {{ book.genre }}</h3>
+        {% endfor %}
+    </div>
+</body>
+</html>
