@@ -1,0 +1,17 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/library.css">
+    </head>
+        <title> {{ title }} - Library</title>
+        <body>
+            <ul>
+                <li><a href="/library">Home</a></li>
+                <li><a href="/library/add_new">Add New Book</a></li>
+            </ul>
+            <hr>
+            {% block content %}
+
+            {% endblock %}
+        </body>
+</html>
