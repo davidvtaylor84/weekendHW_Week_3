@@ -11,13 +11,14 @@
 </head>
 <body>
     <h1>Our Books</h1>
-    <div>
-        {% for book in booklist %}
+    {% for book in booklist %}
+       <div> 
         <h3><a href="library/{{booklist.index(book)}}">{{ book.book_title }} | {{ book.author }}</a></h3>
-    
-        {% endfor %}
+        <form class="form-inline" action= "/library/{{booklist.index(book)}}" method="POST">
+            <input type="submit" value="Remove Book" id="index_position">
         </form>
     </div>
+    {% endfor %}
 </body>
 </html>
 

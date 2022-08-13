@@ -45,14 +45,14 @@ def add_new_book(book):
 #     if book_title and author in booklist:
 #         booklist.remove(book_title, author)
 
-def delete_book(index):
-    book_to_delete = None
-    for book in booklist:
-        if booklist.index == index:
-            book_to_delete = book
-        break
+# def delete_book(index):
+#     book_to_delete = None
+#     for book in booklist:
+#         if booklist.index == index:
+#             book_to_delete = book
+#         break
 
-    booklist.remove(book_to_delete)
+#     booklist.remove(book_to_delete)
 
 # def delete_event(event_name):
 #     event_to_delete = None
@@ -62,3 +62,11 @@ def delete_book(index):
 #             break
 
 #     events.remove(event_to_delete)
+
+def delete_book(index):
+    for book in booklist:
+        if booklist.index(book) == index:
+            booklist.remove(book)
+            return
+
+

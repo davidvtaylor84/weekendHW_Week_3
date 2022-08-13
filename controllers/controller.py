@@ -31,8 +31,9 @@ def new_book():
 # def delete_form():
 #     return render_template('delete_book.html', title = "Delete Book")
 
-@app.route('/library/<index>', methods =["POST"])
-def delete():
-    delete_book()
+@app.route('/library/<int:index>', methods =["POST"])
+def delete(index):
+    delete_book(index)
     return redirect('/library')
+    
 
