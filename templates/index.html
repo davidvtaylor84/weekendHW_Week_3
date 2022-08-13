@@ -14,7 +14,9 @@
     <div>
         {% for book in booklist %}
         <h3><a href="library/{{booklist.index(book)}}">{{ book.book_title }} | {{ book.author }}</a></h3>
+    
         {% endfor %}
+        </form>
     </div>
 </body>
 </html>

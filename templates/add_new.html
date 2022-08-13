@@ -1,8 +1,9 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block content %}
 
 <div>
+<h1>Add Book to Library List</h1>
 <form action="/add_new" method ="post">
     <label for="isbn">ISBN:</label>
     <input type="number" name="isbn" id = "isbn">

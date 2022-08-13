@@ -5,3 +5,5 @@ class Book:
         self.genre = genre
         self.isbn = isbn
         self.summary = summary
+
+    

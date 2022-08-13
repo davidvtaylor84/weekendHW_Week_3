@@ -19,3 +19,46 @@ book7 = Book("Inverted World", "Christopher Priest", "Science-Fiction", 97851683
 book8 = Book("The Vorhh", "Brian Catling", "Fantasy", 9787869285564, "The Vorrh is a dark historical fantasy novel by multi-disciplinary artist B. Catling that was first published in November of 2012.")
 
 booklist = [book1, book2, book3, book4, book5, book6, book7, book8]
+
+def add_new_book(book):
+    booklist.append(book)
+
+# def delete_book(title):
+#     book_to_delete = None
+#     for book in booklist: 
+#         if book.book_title == title:
+#             book_to_delete = book
+#             break
+#     booklist.remove(title)
+
+# def delete_book(index_position):
+#     index_position = booklist.index
+#     for book in booklist:
+#         if book == index_position:
+#             booklist.remove(index_position)
+
+# def delete_book(book_to_be_deleted):
+#     if book_to_be_deleted in booklist:
+#         booklist.remove(book_to_be_deleted)
+
+# def delete_book(book_title, author):
+#     if book_title and author in booklist:
+#         booklist.remove(book_title, author)
+
+def delete_book(index):
+    book_to_delete = None
+    for book in booklist:
+        if booklist.index == index:
+            book_to_delete = book
+        break
+
+    booklist.remove(book_to_delete)
+
+# def delete_event(event_name):
+#     event_to_delete = None
+#     for event in events:
+#         if event.name == event_name:
+#             event_to_delete = event
+#             break
+
+#     events.remove(event_to_delete)
