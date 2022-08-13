@@ -16,7 +16,12 @@
     <ul>
         <li>
             <p>Title: {{booklist.book_title}} | Author: {{booklist.author}} | Genre: {{booklist.genre}} | ISBN: {{booklist.isbn}}</p>
-            <p>Summary: {{booklist.summary}}</p>
+            <p>Summary: {{booklist.summary}}</p> 
+            {% if booklist.status %}
+                    <h4>Is this book currently available? &#10004;</h4>
+                {% else %}
+                    <h4>Is this book currently available? &#10006;</h4>
+            {% endif %}
         </li>
     </ul>
 </body>
