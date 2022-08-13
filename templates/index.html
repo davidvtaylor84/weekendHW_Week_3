@@ -10,13 +10,14 @@
     <title>Library Main</title>
 </head>
 <body>
-    <h1>Our Books</h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <img src="https://i.pinimg.com/originals/14/1e/11/141e11072c84155e223c99980df1b674.jpg" alt="">
+    <h1>Our Catalogue</h1>
     {% for book in booklist %}
-       <div> 
-        <h3><a href="library/{{booklist.index(book)}}">{{ book.book_title }} | {{ book.author }}</a></h3>
-        <form class="form-inline" action= "/library/{{booklist.index(book)}}" method="POST">
-            <input type="submit" value="Remove Book" id="index_position">
+       <div class="index"> 
+        <h3><a href="library/{{booklist.index(book)}}">{{ book.book_title }} | {{ book.author }}</a></h3><form class="form" action= "/library/{{booklist.index(book)}}" method="POST"><input type="submit" value="Remove Book" id="index_position">
         </form>
+        <br>
     </div>
     {% endfor %}
 </body>

@@ -23,7 +23,8 @@ def new_book():
     genre = request.form['genre']
     isbn = request.form['isbn']
     summary = request.form['summary']
-    new_book = Book(book_title, author, genre, isbn, summary)
+    status = False
+    new_book = Book(book_title, author, genre, isbn, summary, status)
     add_new_book(new_book)
     return redirect('/library')
 

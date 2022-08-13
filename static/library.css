@@ -1,0 +1,73 @@
+body {
+    margin: 20px;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5c06d635506fbe62ec834460/1544831366722-H4PSTIG6UH3XOPMZ9C5A/image-asset.jpeg?format=2500w);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: black;
+}
+
+.welcome {
+    font-size: 60px;
+    float: right;
+    text-shadow: 2px 2px;
+}
+
+.index {
+    font-size: 20px;
+    font-weight:bold;
+    text-align: left;
+}
+
+img {float: right;
+outline-style: solid;
+width: 400px;}
+
+
+a {
+    color: black;
+    font-weight: bold;
+
+}
+
+a:visited {
+    color: white;
+   font-weight: bold
+}
+
+.form {
+    display: flexbox;
+}
+
+#newbook {
+    border: 1px, solid black;
+    display: flexbox;
+    align-items:center;
+    text-align: center;
+    background-color:antiquewhite;
+    margin: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    outline-style: solid;
+}
+
+.base {
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    align-items: right;
+    text-align: right;
+    
+}
+
+.specific {
+    font-size: 18px;
+    display: inline-block;
+    list-style: outside none none;
+    margin-right: 600px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: antiquewhite;
+}
+
